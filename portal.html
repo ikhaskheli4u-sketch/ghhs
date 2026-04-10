@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - GBHSS Sindhri</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">&#127891;</div>
+                <span>GBHSS Sindhri</span>
+            </a>
+            <nav class="nav">
+                <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="portal.html" class="active">Student Portal</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin-login.html" style="color: var(--accent);">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Student Portal</h1>
+            <p>Access your academic resources and information</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="content-section" style="text-align: center;">
+                <h2>Student Login</h2>
+                <p style="margin-bottom: 2rem;">Enter your credentials to access the student portal</p>
+                <form id="login-form" onsubmit="handleLogin(event)" style="max-width: 400px; margin: 0 auto;">
+                    <div class="form-group">
+                        <label for="rollNo">Roll Number</label>
+                        <input type="text" id="rollNo" name="rollNo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Login</button>
+                </form>
+                <p style="margin-top: 1rem;"><a href="contact.html" style="color: var(--accent);">Forgot Password? Contact Administration</a></p>
+            </div>
+
+            <div class="section-title" style="margin-top: 3rem;">
+                <h2>Portal Features</h2>
+                <p>Explore what the student portal offers</p>
+            </div>
+
+            <div class="portal-cards">
+                <div class="portal-card">
+                    <div class="card-icon" style="margin: 0 auto 1rem;">&#128221;</div>
+                    <h3>View Results</h3>
+                    <p>Check your examination results, progress reports, and academic performance.</p>
+                </div>
+                <div class="portal-card">
+                    <div class="card-icon" style="margin: 0 auto 1rem;">&#128197;</div>
+                    <h3>Class Schedule</h3>
+                    <p>Access your daily class routine, timetable, and examination schedule.</p>
+                </div>
+                <div class="portal-card">
+                    <div class="card-icon" style="margin: 0 auto 1rem;">&#128196;</div>
+                    <h3>Assignments</h3>
+                    <p>View and download assignments, worksheets, and study materials.</p>
+                </div>
+                <div class="portal-card">
+                    <div class="card-icon" style="margin: 0 auto 1rem;">&#128172;</div>
+                    <h3>Announcements</h3>
+                    <p>Stay updated with school notices, events, and important announcements.</p>
+                </div>
+                <div class="portal-card">
+                    <div class="card-icon" style="margin: 0 auto 1rem;">&#128100;</div>
+                    <h3>Attendance</h3>
+                    <p>Monitor your attendance record and view attendance statistics.</p>
+                </div>
+                <div class="portal-card">
+                    <div class="card-icon" style="margin: 0 auto 1rem;">&#128220;</div>
+                    <h3>Fee Status</h3>
+                    <p>Check your fee payment history and outstanding dues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--light);">
+        <div class="container">
+            <div class="content-section">
+                <h2>Important Notices</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-content">
+                            <span class="news-date">April 10, 2026</span>
+                            <h3>Mid-Term Results</h3>
+                            <p>Mid-term examination results will be announced on April 20th.</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-content">
+                            <span class="news-date">April 8, 2026</span>
+                            <h3>Library Timings</h3>
+                            <p>Extended library hours for Class 10 and 12 students during exam season.</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-content">
+                            <span class="news-date">April 5, 2026</span>
+                            <h3>Fee Deadline</h3>
+                            <p>Last date for fee submission is April 30th to avoid late fee charges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>GBHSS Sindhri</h4>
+                    <p>Providing quality education and nurturing future leaders since 1965.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="portal.html">Student Portal</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="admin-login.html">Admin Panel</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Sindhri, Sindh, Pakistan</li>
+                        <li>Phone: +92 XXX-XXXXXXX</li>
+                        <li>Email: info@gbhss-sindhri.edu.pk</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GBHSS Sindhri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
