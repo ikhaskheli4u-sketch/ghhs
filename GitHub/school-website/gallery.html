@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - GBHSS Sindhri</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">&#127891;</div>
+                <span>GBHSS Sindhri</span>
+            </a>
+            <nav class="nav">
+                <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="portal.html">Student Portal</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin-login.html" style="color: var(--accent);">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p>Moments captured from our school events and activities</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-container">
+                <div class="gallery-item">
+                    <div style="width:100%;height:200px;background:linear-gradient(135deg,#1a365d,#2c5282);display:flex;align-items:center;justify-content:center;color:#fff;font-size:3rem;">&#127934;</div>
+                    <div class="gallery-overlay">
+                        <h4>Annual Sports Day 2025</h4>
+                        <p>Cricket tournament finals</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width:100%;height:200px;background:linear-gradient(135deg,#2c5282,#ed8936);display:flex;align-items:center;justify-content:center;color:#fff;font-size:3rem;">&#127891;</div>
+                    <div class="gallery-overlay">
+                        <h4>Graduation Ceremony</h4>
+                        <p>Class of 2025 farewell</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width:100%;height:200px;background:linear-gradient(135deg,#ed8936,#c05621);display:flex;align-items:center;justify-content:center;color:#fff;font-size:3rem;">&#128300;</div>
+                    <div class="gallery-overlay">
+                        <h4>Science Fair</h4>
+                        <p>Student innovation projects</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width:100%;height:200px;background:linear-gradient(135deg,#1a365d,#ed8936);display:flex;align-items:center;justify-content:center;color:#fff;font-size:3rem;">&#128166;</div>
+                    <div class="gallery-overlay">
+                        <h4>Environment Day</h4>
+                        <p>Tree plantation campaign</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width:100%;height:200px;background:linear-gradient(135deg,#2c5282,#1a365d);display:flex;align-items:center;justify-content:center;color:#fff;font-size:3rem;">&#128107;</div>
+                    <div class="gallery-overlay">
+                        <h4>Independence Day</h4>
+                        <p>Celebrating 14th August</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width:100%;height:200px;background:linear-gradient(135deg,#c05621,#ed8936);display:flex;align-items:center;justify-content:center;color:#fff;font-size:3rem;">&#127873;</div>
+                    <div class="gallery-overlay">
+                        <h4> Eid Milan</h4>
+                        <p>Festival celebrations</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width:100%;height:200px;background:linear-gradient(135deg,#1a365d,#718096);display:flex;align-items:center;justify-content:center;color:#fff;font-size:3rem;">&#128172;</div>
+                    <div class="gallery-overlay">
+                        <h4>Debate Competition</h4>
+                        <p>Inter-school debate event</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width:100%;height:200px;background:linear-gradient(135deg,#ed8936,#2c5282);display:flex;align-items:center;justify-content:center;color:#fff;font-size:3rem;">&#127918;</div>
+                    <div class="gallery-overlay">
+                        <h4>Annual Day</h4>
+                        <p>Cultural performances</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div style="width:100%;height:200px;background:linear-gradient(135deg,#2c5282,#c05621);display:flex;align-items:center;justify-content:center;color:#fff;font-size:3rem;">&#128694;</div>
+                    <div class="gallery-overlay">
+                        <h4>PTM Meeting</h4>
+                        <p>Parent-teacher interaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="gallery-sessions-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-en="📁 Photo Albums" data-ur="📁 فوٹو البم">📁 Photo Albums</h2>
+                <p data-en="Browse our photo collections by event" data-ur="واقعات کے مطابق فوٹو کلیکشن دیکھیں">Browse our photo collections by event</p>
+            </div>
+            <div id="public-gallery-sessions"></div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--light);">
+        <div class="container">
+            <div class="content-section">
+                <h2>School Events Calendar</h2>
+                <p>Mark your calendars for these upcoming events:</p>
+                <ul>
+                    <li><strong>April 15:</strong> Parent-Teacher Meeting</li>
+                    <li><strong>April 20:</strong> Science Quiz Competition</li>
+                    <li><strong>April 25:</strong> Annual Sports Day</li>
+                    <li><strong>May 1:</strong> Labour Day Celebration</li>
+                    <li><strong>May 10:</strong> Eid-ul-Fitr Holiday</li>
+                    <li><strong>May 15:</strong> Annual Examinations Begin</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>GBHSS Sindhri</h4>
+                    <p>Providing quality education and nurturing future leaders since 1965.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="portal.html">Student Portal</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="admin-login.html">Admin Panel</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Sindhri, Sindh, Pakistan</li>
+                        <li>Phone: +92 XXX-XXXXXXX</li>
+                        <li>Email: info@gbhss-sindhri.edu.pk</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GBHSS Sindhri. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <style>
+        .session-album {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        .session-album-header {
+            background: linear-gradient(135deg, #1a365d, #2c5282);
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .session-album-header h3 { margin: 0; }
+        .session-album-header p { margin: 0; opacity: 0.8; font-size: 0.9rem; }
+        .session-photo-count { background: rgba(255,255,255,0.2); padding: 0.25rem 0.75rem; border-radius: 20px; }
+        .session-photos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 1.5rem;
+        }
+        .session-photo-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            aspect-ratio: 1;
+            cursor: pointer;
+        }
+        .session-photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .session-photo-item:hover img { transform: scale(1.05); }
+        .session-photo-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 0.5rem;
+            font-size: 0.85rem;
+        }
+    </style>
+    <script>
+        function loadPublishedGallery() {
+            const adminDB = localStorage.getItem('schoolDB');
+            const published = localStorage.getItem('publishedData');
+            const data = published ? JSON.parse(published) : (adminDB ? JSON.parse(adminDB) : null);
+            
+            const sessionsContainer = document.getElementById('public-gallery-sessions');
+            
+            if (data && data.sessions && data.sessions.length > 0) {
+                let sessionsHTML = '';
+                
+                data.sessions.forEach(session => {
+                    if (session.photos && session.photos.length > 0) {
+                        const photosHTML = session.photos.map(photo => `
+                            <div class="session-photo-item">
+                                <img src="${photo.url}" alt="${photo.caption || session.name}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect fill=%22%23e2e8f0%22 width=%22100%22 height=%22100%22/%3E%3Ctext x=%2250%22 y=%2250%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2240%22%3E📷%3C/text%3E%3C/svg%3E'">
+                                ${photo.caption ? `<div class="caption">${photo.caption}</div>` : ''}
+                            </div>
+                        `).join('');
+                        
+                        sessionsHTML += `
+                            <div class="session-album">
+                                <div class="session-album-header">
+                                    <div>
+                                        <h3>📁 ${session.name}</h3>
+                                        <p>${session.description || ''} ${session.date ? '• ' + session.date : ''}</p>
+                                    </div>
+                                    <span class="session-photo-count">${session.photos.length} photos</span>
+                                </div>
+                                <div class="session-photos-grid">
+                                    ${photosHTML}
+                                </div>
+                            </div>
+                        `;
+                    }
+                });
+                
+                sessionsContainer.innerHTML = sessionsHTML || '<p style="text-align:center;color:#718096;">No photo sessions found.</p>';
+            } else {
+                sessionsContainer.innerHTML = `
+                    <div style="text-align: center; padding: 3rem; color: #718096; border: 2px dashed #e2e8f0; border-radius: 10px;">
+                        <p style="font-size: 3rem; margin: 0;">📷</p>
+                        <p style="margin-top: 1rem;">No photo albums yet.</p>
+                        <p>Admin panel me photos add karein.</p>
+                    </div>
+                `;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', loadPublishedGallery);
+    </script>
+</body>
+</html>
